@@ -1,0 +1,13 @@
+uuid: d2480f48-d2a0-458b-a127-e94fb0c49ee1
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Osobisty formularz kontaktowy'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Wiadomość została wysłana.'
+redirect: ''

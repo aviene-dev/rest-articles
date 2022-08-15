@@ -1,0 +1,13 @@
+uuid: ece76521-1e0e-4298-8fca-13c4db14f8e0
+langcode: pl
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: tWOIjSMobEWOFZddMkNqb9JySbOVwE1diC6NRqcfLTk
+id: comment_unpublish_action
+label: 'Wstrzymaj publikację komentarzy'
+type: comment
+plugin: 'entity:unpublish_action:comment'
+configuration: {  }

@@ -1,0 +1,13 @@
+uuid: 5a7a5596-b2bc-4bcd-8c12-b00d1ef2b897
+langcode: pl
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: z2sNRM3ECa7FPCGnSNje_9SmZJQgwhD_6fG_L4Mr8zI
+id: taxonomy_term_unpublish_action
+label: 'Wstrzymaj publikację terminu taksonomii'
+type: taxonomy_term
+plugin: 'entity:unpublish_action:taxonomy_term'
+configuration: {  }

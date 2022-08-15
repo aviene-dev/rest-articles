@@ -1,0 +1,54 @@
+volumes:
+  mysql:
+
+services:
+  php-dev:
+    image: droptica/php-cli:${PHP_VERSION}
+    depends_on:
+      - mysql
+    working_dir: /app/app
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    environment:
+      - COMPOSER_PATH=/app/app
+      - PHP_MEMORY_LIMIT=-1
+
+  apache:
+    image: droptica/php-apache:${PHP_VERSION}
+    restart: ${D_RESTART}
+    depends_on:
+      - mysql
+    volumes:
+      - ./app:/var/www
+    working_dir: /var/www/web
+    environment:
+      - DOCUMENT_ROOT=/var/www/web
+    env_file:
+      - .env
+    networks:
+      - default
+
+  mysql:
+    image: mysql:5.6
+    restart: ${D_RESTART}
+    volumes:
+      - mysql:/var/lib/mysql
+      - ./configs/mysql/dev-my.cnf:/etc/mysql/conf.d/custom.cnf:ro
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER:     ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+
+  pma:
+    image: nazarpc/phpmyadmin
+    restart: ${D_RESTART}
+    depends_on:
+      - mysql
+    networks:
+      - default
+
+networks:
+  default:

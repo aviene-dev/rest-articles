@@ -1,0 +1,7 @@
+name: Rest Content
+type: module
+description: 'Provides content via Rest response'
+core_version_requirement: '^8 || ^9'
+package: Custom
+dependencies:
+  - simple_oauth:simple_oauth

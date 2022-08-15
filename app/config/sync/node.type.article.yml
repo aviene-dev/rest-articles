@@ -1,0 +1,13 @@
+uuid: 97014885-6376-42f5-8bd1-d16981ea65a6
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Artykuł
+type: article
+description: 'Użyj <em>artykułów</em> dla dynamicznych treści, takich jak newsy, przegląd prasy lub wpisy na blogu.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

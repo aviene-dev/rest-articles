@@ -1,0 +1,10 @@
+uuid: ed84a25a-68b3-4e79-ad0f-e52f76097554
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Stopka
+description: 'Odnośniki dotyczące informacji o stronie'
+locked: true
