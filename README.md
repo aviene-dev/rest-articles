@@ -20,7 +20,7 @@ client_secret => 1234
 5. Copy the `access_token` value.
 6. Go to another POSTMAN tab.
 7.  Paste your page's IP following by `/api/articles`
-8. Set authorization as `Bearer <coppied_token>`
+8. Set request method as GET and authorization as `Bearer <coppied_token>`
 9. After sending the request you will receieve a list of articles in JSON format.
 10. Access token is valid for 60s, after that you will need to generate a new token by `refresh_token` form the request you did on `/oauth/token`.
 11. Change the data of `/oauth/token` request to:
