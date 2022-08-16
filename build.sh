@@ -3,6 +3,8 @@
 # Up the containers.
 docker-compose up -d
 
+docker-compose run php-dev composer install
+
 # Extract the database.
 cd database
 tar -xzvf database.sql.tar.gz database.sql
